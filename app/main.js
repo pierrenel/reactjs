@@ -1,7 +1,7 @@
 import React from 'react';
-import {render} from 'react-dom';
+import ReactDOM from 'react-dom';
 import Engage from './Engage';
 import './main.scss';
 
-
-render(<Engage />, document.getElementById('root'));
+const root = document.getElementById('root');
+ReactDOM.render(<Engage/>, root);

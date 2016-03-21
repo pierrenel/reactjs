@@ -1,13 +1,13 @@
-import React, {Component} from 'react';
-import { bgVideo } from './components/bgVideo';
-import styles from './Engage.scss';
+import React from 'react';
+import Video from './components/Video';
 
-class Engage extends Component{
-  render() {
-    return (
-      <bgVideo />
-    );
-  }
+export default class Engage extends React.Component {
+	//do nothing
+	render() {
+    	return (
+    		<div>
+      			<Video/>
+      		</div>
+    	);
+  	}
 }
-
-export default Engage
