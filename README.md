@@ -12,7 +12,7 @@ npm install
 npm start
 ```
 
-Open http://localhost:8080 in your browser.
+Open http://localhost:9991 in your browser.
 
 Static files are served from the `public` folder, project JavaScript files are bundled from the `app` folder.
 
