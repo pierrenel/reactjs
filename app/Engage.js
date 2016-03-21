@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import styles from './App.css';
+import styles from './Engage.scss';
 
-class App extends Component{
+class Engage extends Component{
   render() {
     return (
       <div className={styles.root}>
@@ -11,4 +11,4 @@ class App extends Component{
   }
 }
 
-export default App
+export default Engage

@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
-import App from './App';
-import './main.css';
+import Engage from './Engage';
+import './main.scss';
 
 
-render(<App />, document.getElementById('root'));
+render(<Engage />, document.getElementById('root'));

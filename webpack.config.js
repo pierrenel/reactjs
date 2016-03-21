@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -22,8 +23,8 @@ module.exports = {
         loader: 'babel'
       },
       {
-        test: /\.css$/,
-        loader: 'style!css?modules!postcss'
+        test: /\.scss$/,
+        loader: 'style!css!sass'
       }
     ]
   },
