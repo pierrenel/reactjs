@@ -3,7 +3,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: __dirname + "/app/main.js",
+  entry: __dirname + "/src/js/main.js",
   output: {
     path: __dirname + "/build",
     filename: "[name]-[hash].js"
@@ -33,7 +33,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: __dirname + "/app/index.tmpl.html"
+      template: __dirname + "/src/index.html"
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin(),
