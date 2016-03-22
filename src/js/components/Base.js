@@ -1,7 +1,7 @@
 import React from 'react';
-import Video from './components/Video';
+import Video from './Video';
 
-export default class Engage extends React.Component {
+export default class Base extends React.Component {
 	//do nothing
 	render() {
     	return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Engage from './Engage';
-import './main.scss';
+import Base from './components/Base';
+import '../scss/main.scss';
 
 const root = document.getElementById('root');
-ReactDOM.render(<Engage/>, root);
+ReactDOM.render(<Base/>, root);

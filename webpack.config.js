@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   devtool: 'eval-source-map',
 
-  entry: __dirname + "/app/main.js",
+  entry: __dirname + "/src/js/main.js",
   output: {
     path: __dirname + "/build",
     filename: "bundle.js"
@@ -14,13 +14,13 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.json$/,
-        loader: "json"
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel'
+        test: /\.jsx?$/,
+          exclude: /(node_modules|bower_components)/,
+          loader: 'babel-loader',
+          query: {
+            presets: ['react', 'es2015', 'stage-0'],
+            plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy'],
+          }
       },
       {
         test: /\.scss$/,
@@ -35,7 +35,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: __dirname + "/app/index.tmpl.html"
+      template: __dirname + "/src/index.html"
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
