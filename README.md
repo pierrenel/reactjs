@@ -16,7 +16,11 @@ Open http://localhost:9991 in your browser.
 
 Static files are served from the `media` folder, project JavaScript files are bundled from the `src` folder.
 
-To watch ,run:
+On dev run:
+```
+npm run dev
+```
+and to watch run:
 ```
 wepack --watch
 ```
