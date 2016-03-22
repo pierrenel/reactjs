@@ -14,7 +14,12 @@ npm start
 
 Open http://localhost:9991 in your browser.
 
-Static files are served from the `public` folder, project JavaScript files are bundled from the `app` folder.
+Static files are served from the `media` folder, project JavaScript files are bundled from the `src` folder.
+
+To watch ,run:
+```
+wepack --watch
+```
 
 **When ready, build for production**
 ```
